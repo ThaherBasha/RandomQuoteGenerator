@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="b">
+    <button id="btn1">click for color change</button>
+
+    <script>
+        let btn2=document.getElementById("btn1")
+        let color=["red","blue","green","yellow","orange"]
+        btn2.addEventListener("click",()=>{
+            let bdy=document.getElementById("b")
+            bdy.style.background=color[parseInt(Math.random()*color.length)]
+
+        })
+        
+    </script>
+    
+</body>
+</html>
