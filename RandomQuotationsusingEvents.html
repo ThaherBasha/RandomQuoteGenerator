@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bn">click here for quotes</button>
+    <p id="p"></p>
+    <script>
+        let btn=document.getElementById("bn")
+
+        let arr=["patience is the key to success","Health is wealth","No one can love you more than your parents","Save Tree","Praise the Lord","Success does not come to you you have to go for it"]
+        btn.addEventListener("click",()=>{
+            let b=document.getElementById("p")
+                b.innerHTML=arr[parseInt(Math.random()*arr.length)]
+                b.style.color="red"
+        })
+        
+        
+    </script>
+
+    
+</body>
+</html>
